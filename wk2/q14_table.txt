@@ -1,0 +1,7 @@
+n	T(n) = log n	T(n) = n	T(n) = n log n	T(n) = n^2	T(n) = n^3	T(n) = 2^n
+10	0.003 µsec 	0.01  µsec 	0.03 µsec 	0.1    µsec	0.001 ms	0.001 ms
+20	0.004 µsec 	0.02  µsec 	0.09 µsec 	0.4    µsec	0.008 ms 	1     ms
+50	0.006 µsec 	0.05  µsec 	0.28 µsec 	0.0025 ms 	0.125 ms 	13    days
+100	0.007 µsec 	0.1   µsec 	0.67 µsec 	0.01   ms  	1     ms	4 x 10^13 years
+1000	0.01  µsec 	0.001 ms 	0.01 ms 	1      ms 	1     sec	very long time
+10000	0.013 µsec 	0.01  ms 	0.13 ms 	100    ms 	17    min 	very very long time
