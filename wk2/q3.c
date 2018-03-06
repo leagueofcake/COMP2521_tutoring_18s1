@@ -43,6 +43,30 @@ char *numToDaySwitch(int n) {
     return day;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Using an array for table lookup
 char *numToDayArray(int n) {
     assert(0 <= n && n <= 6);
