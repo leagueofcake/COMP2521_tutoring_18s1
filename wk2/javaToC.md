@@ -40,9 +40,9 @@ struct IntListNode {
 };
 
 struct IntListNode *newIntListNode(int data) {
-    struct IntListNode *n; // Declare a pointer to an IntListNode
+    struct IntListNode *n;                  // Declare a pointer to an IntListNode
     n = malloc(sizeof(struct IntListNode)); // Allocate enough memory to store an IntListNode
-    assert(n != NULL); // Check that malloc succeeded
+    assert(n != NULL);                      // Check that malloc succeeded
     n->data = v;
     n->next = NULL;
     return n;
@@ -82,9 +82,9 @@ struct IntListRep {
 }
 
 struct IntListRep *newIntListRep () {
-    struct IntListRep *L; // Declare a pointer to an IntListNode
+    struct IntListRep *L;                  // Declare a pointer to an IntListNode
     L = malloc(sizeof(struct IntListRep)); // Allocate enough memory to store an IntListRep
-    assert(L != NULL); // Check that malloc succeeded
+    assert(L != NULL);                     // Check that malloc succeeded
     L->size = 0;
     L->first = NULL;
     L->last = NULL;
@@ -95,6 +95,7 @@ struct IntListRep *newIntListRep () {
 struct IntListRep *list = newIntListRep();
 // Use the list...
 free(list); // Free the memory we allocated once we are done with it
+// We would also need to free any nodes that we have used in our list
 ```
 
 ## Iterating through a linked list
