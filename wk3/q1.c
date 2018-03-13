@@ -2,29 +2,29 @@
 // i. Unsorted array of pre-defined size MAX_BAG
 
 #define MAX_BAG 10
-int numElems = 5;       // Count of items in bag
-int numUniq = 4;
+int numElems = 4;       // Count of items in bag
+int numUniq = 3;
 
 // Values appear multiple times
-Bag    [3, 1, 4, 2, 1, _, _, _, _, _]
+Bag    [2, 5, 2, 1, _, _, _, _, _, _]
 
 // Each value appears only once, along with a count of occurrences
-Bag    [3, 1, 4, 2, _, _, _, _, _, _]
-Counts [1, 2, 1, 1, 0, 0, 0, 0, 0, 0]       // Counters for values
+Bag    [2, 5, 1, _, _, _, _, _, _, _]
+Counts [2, 1, 1, 0, 0, 0, 0, 0, 0, 0]       // Counters for values
 
 
 
 // ii. Unsorted linked list
 
-int numElems = 5;
-int numUniq = 4;
+int numElems = 4;
+int numUniq = 3;
 
 // Values appear multiple times
-Bag is 3 -> 1 -> 4 -> 2 -> 1 -> [NULL]
+Bag is 2 -> 5 -> 2 -> 1 -> X
 
 // Each value appears only once, along with a count of occurrences
 // Each node in form (Value, Count)
-Bag is (3, 1) -> (1, 2) -> (4, 1) -> (2, 1) -> [NULL]
+Bag is (2, 2) -> (5, 1) -> (1, 1) -> X
 
 
 // b. Algorithms on Bag ADT
