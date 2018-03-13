@@ -1,0 +1,9 @@
+# Ignore files (binaries) starting with q
+q*
+
+# ... but unignore .c files, q14.m and q14_table.txt
+!*.c
+!q4.txt
+
+# vim swapfiles
+*.swp
