@@ -4,6 +4,7 @@ q*
 # ... but unignore .c files, q14.m and q14_table.txt
 !*.c
 !q4.txt
+!q5.txt
 
 # vim swapfiles
 *.swp
