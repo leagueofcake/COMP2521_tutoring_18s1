@@ -1,0 +1,70 @@
+a. Selection Sort
+4, 6, 2, 7, 8, 5, 1, 3      // Starting state
+1| 6, 2, 7, 8, 5, 4, 3      // Swap 1 and 4
+1, 2| 6, 7, 8, 5, 4, 3      // Swap 2 and 6
+1, 2, 3| 7, 8, 5, 4, 6      // Swap 3 and 6
+1, 2, 3, 4| 8, 5, 7, 6      // Swap 4 and 7
+1, 2, 3, 4, 5| 8, 7, 6      // Swap 5 and 8
+1, 2, 3, 4, 5, 6| 7, 8      // Swap 6 and 8
+1, 2, 3, 4, 5, 6, 7| 8      // No swaps
+1, 2, 3, 4, 5, 6, 7, 8      // Finished
+
+b. Bubble Sort
+4, 6, 2, 7, 8, 5, 1, 3      // Starting state
+
+// i = 0
+4, 6, 2, 7, 8, 1, 5, 3      // Compare 5 and 3, no swap
+4, 6, 2, 7, 8, 1, 5, 3      // Swap 1 and 5
+4, 6, 2, 7, 1, 8, 5, 3      // Swap 1 and 8
+4, 6, 2, 1, 7, 8, 5, 3      // Swap 1 and 7
+4, 6, 1, 2, 7, 8, 5, 3      // Swap 1 and 2
+4, 1, 6, 2, 7, 8, 5, 3      // Swap 1 and 6
+1, 4, 6, 2, 7, 8, 5, 3      // Swap 1 and 4
+
+// i = 1
+1| 4, 6, 2, 7, 8, 3, 5      // Swap 3 and 5
+1| 4, 6, 2, 7, 3, 8, 5      // Swap 3 and 8
+1| 4, 6, 2, 3, 7, 8, 5      // Swap 3 and 7
+1| 4, 6, 2, 3, 7, 8, 5      // Compare 3 and 2, no swap
+1| 4, 2, 6, 3, 7, 8, 5      // Swap 2 and 6
+1| 2, 4, 6, 3, 7, 8, 5      // Swap 2 and 4
+
+// i = 2
+1, 2| 4, 6, 3, 7, 5, 8      // Swap 5 and 8
+1, 2| 4, 6, 3, 5, 7, 8      // Swap 5 and 7
+1, 2| 4, 6, 3, 5, 7, 8      // Compare 5 and 3, no swap
+1, 2| 4, 3, 6, 5, 7, 8      // Swap 3 and 6
+1, 2| 3, 4, 6, 5, 7, 8      // Swap 3 and 4
+
+// i = 3
+1, 2, 3| 4, 6, 5, 7, 8      // Compare 7 and 8, no swap
+1, 2, 3| 4, 6, 5, 7, 8      // Compare 5 and 7, no swap
+1, 2, 3| 4, 5, 6, 7, 8      // Swap 5 and 6
+1, 2, 3| 4, 5, 6, 7, 8      // Compare 4 and 5, no swap
+
+// i = 4
+1, 2, 3, 4| 5, 6, 7, 8      // Compare 7 and 8, no swap
+1, 2, 3, 4| 5, 6, 7, 8      // Compare 6 and 7, no swap
+1, 2, 3, 4| 5, 6, 7, 8      // Compare 5 and 6, no swap
+// nswaps == 0 => break
+
+c. Quick Sort
+4, 6, 2, 7, 8, 5, 1, 3          // Starting state
+
+// qsort(nums, 0, 7)
+[3, 1, 2], 4, [6, 7, 8, 5]      // Partition around first element (4) => i = 3
+
+// qsort(nums, 0, 2)
+1, [2, 3]                       // Partition around first element (3) => i = 0
+
+// qsort(nums, 1, 2)
+   2, [3]                       // Partition around first element (2) => i = 1
+
+// qsort(nums, 4, 7)
+              [5], 6, [7, 8]    // Partition around first element (6) => i = 5
+
+// qsort(nums, 6, 7)
+                      7, [8]    // Partition around first element (7) => i = 5
+
+// Final state
+1, 2, 3, 4, 5, 6, 7, 8
