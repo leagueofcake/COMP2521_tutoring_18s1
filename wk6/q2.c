@@ -1,4 +1,4 @@
-/ q2 - External file merge - updated
+// q2 - External file sort - updated
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
