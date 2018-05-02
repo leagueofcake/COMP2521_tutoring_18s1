@@ -1,0 +1,9 @@
+1. Setting up a network - e.g. connecting all the houses in a suburb to the NBN using as little wiring as possible
+  -Vertices: houses
+  -Edges   : network cables between houses
+  -Weights : length of cables
+
+2. Clustering items in a dataset - e.g. social networks, online shopping recommendation systems
+  -Vertices: items to be categorised
+  -Edges   : relationship between two items
+  -Weights : level of similarity/difference between two items
